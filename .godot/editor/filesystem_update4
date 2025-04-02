@@ -1,0 +1,6 @@
+res://default_env.tres
+res://scenes/TileMap.tscn
+res://scripts/tile.gd
+res://scripts/tile_map.gd
+res://scenes/Tile.tscn
+res://scripts/Character.gd

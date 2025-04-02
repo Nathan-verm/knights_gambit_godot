@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1743606121
+default_env.tres::Environment::4827072095763620192::1743455028::0::1::::<><><>0<>0<><>::
+icon.png::CompressedTexture2D/CompressedTexture2D::4044799923110319963::1743352977::1743360561::1::::<><><>0<>0<>0f335154dcb30df395d374195f35ae84<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+::res://assets/::1743360561
+peasant.png::CompressedTexture2D/CompressedTexture2D::882619521650314653::1743101387::1743360561::1::::<><><>0<>0<>f66055ea189b94bcb577f7a6861f0882<>res://.godot/imported/peasant.png-28a988ae8eb4b453b5952c57beca4b60.ctex::
+tile.png::CompressedTexture2D/CompressedTexture2D::6670684523570360293::1743355262::1743360561::1::::<><><>0<>0<>a2c8d9e5bf8e8dd587084b11933b2501<>res://.godot/imported/tile.png-455dd1073ac41712b0ee435e5393be66.ctex::
+::res://scenes/::1743455028
+Character.tscn::PackedScene/PackedScene::8366369481716760687::1743367700::0::1::::<><><>0<>0<><>::uid://mtsu5pbawv62::::res://assets/peasant.png<>uid://bdow73jp6ku53::::res://scripts/Character.gd
+Tile.tscn::PackedScene/PackedScene::4910820660193228840::1743366977::0::1::::<><><>0<>0<><>::uid://c2blg1vkmy38t::::res://assets/tile.png<>uid://b5fbixukb0ppp::::res://scripts/tile.gd
+TileMap.tscn::PackedScene::3435714745055491516::1743455028::0::1::::<><><>0<>0<><>::uid://cqbv6sybsc6ft::::res://scripts/tile_map.gd
+::res://scripts/::1743453258
+Character.gd::GDScript::2627282907690272712::1743454767::0::1::::CharacterClass<>Node2D<><>0<>0<><>::
+tile.gd::GDScript::4502484124338209761::1743454945::0::1::::TileClass<>Node2D<><>0<>0<><>::
+tile_map.gd::GDScript::5899258642373140233::1743454028::0::1::::TileMapClass<>Node2D<><>0<>0<><>::

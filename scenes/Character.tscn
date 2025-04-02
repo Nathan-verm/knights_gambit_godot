@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://drgy5a1kc2c6r"]
+
+[ext_resource type="Texture2D" uid="uid://mtsu5pbawv62" path="res://assets/peasant.png" id="1"]
+[ext_resource type="Script" uid="uid://bdow73jp6ku53" path="res://scripts/Character.gd" id="2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i3nt"]
+size = Vector2(60, 60)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("2")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(32, 31)
+shape = SubResource("RectangleShape2D_3i3nt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(32, 32)
+scale = Vector2(0.177778, 0.177778)
+texture = ExtResource("1")

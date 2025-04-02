@@ -45,3 +45,9 @@ func get_x():
 
 func get_y():
 	return self.position.y 
+
+func select():
+	sprite.modulate = Color(0.2, 0.2, 0.2)
+
+func unselect():
+	sprite.modulate = Color(1, 1, 1)

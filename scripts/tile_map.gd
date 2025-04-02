@@ -17,6 +17,10 @@ func _ready():
 	#TEMP
 	characters = [CharacterClass.new()]
 	for character in characters:
+		var attack_tile = AttackTile.new()
+		attack_tile.attack = [0, 1]
+		character.attack_tiles = [attack_tile]
+
 		character.z_index = 1
 	#TEMP
 
@@ -26,25 +30,38 @@ func _ready():
 
 
 
-
 func tile_clicked(target_tile: TileClass):
-	print("tile clicked: %s" % [target_tile.get_x()])
 	if selected_tile == null:
-		selected_tile = target_tile
+		select_tile(target_tile)
 	else: #already tile clicked => check if selected_tile has a character on it
 
 		if selected_tile.get_maybe_character() != null:
-			print("Tile has character")
 			#change ownership of character
 			var character = selected_tile.get_maybe_character()
 			selected_tile.remove_maybe_character()
 			target_tile.set_maybe_character(character)
+
+			selected_tile.unselect()
+			
+
 			
 		else: #there was no character on this so just select tile
-			selected_tile = target_tile
-			
-# func make_selected_tile_apear_selected():
-# 	selected_tile.get_node("Sprite2D").modulate = Color(1, 0, 0)
+			select_tile(target_tile)
+
+
+func select_tile(tile: TileClass):
+	if tile == null and selected_tile == null:
+		return
+
+	if self.selected_tile != null:
+		selected_tile.unselect()
+
+	if tile != null:
+		tile.select()
+
+	self.selected_tile = tile
+
+
 
 func init_tile_map():
 	tiles.z_index = -1
